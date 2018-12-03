@@ -376,7 +376,7 @@ ul{
 .page-software-flex>div{
     flex-basis: 55%;
 }
-.page-software-icon{
+.setting-icon{
     background-image: url(../img/icon-button.png);
     display: block;
     width: 144px;
@@ -452,10 +452,94 @@ ul{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.title-video{
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    margin-bottom: 37px
+}
+.video-text{
+    line-height: 26px;
+    margin-bottom: 30px;
+}
 .now{
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 3.3px;
+}
+.page-video-list{
+    padding: 0;
+    margin-top: 29px;
+    margin-left: -11px;
+}
+.page-video-list>li{
+    display: inline-block;
+}
+.page-video-list>li>a{
+    background-image: url(../img/app.png);
+    display:block;
+    width: 181px;
+    height: 74px;
+    background-repeat: no-repeat;
+}
+.page-video-and{
+    background-position: -8px -8px;
+}
+.page-video-ios{
+    background-position: -198px -8px;
+}
+.page-video-content{
+    width: 55%;
+}
+.video-app{
+    position: absolute;
+    top: -60px;
+    right: -170px;
+}
+.flex-state{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-state{
+    letter-spacing: -1.5px;
+    margin-top: 9px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.state-text{
+    line-height: 26px;
+    margin-bottom: 36px;
+}
+.state-content{
+    flex-basis: 54%;
+}
+.flex-learn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.learn-content{
+    flex-basis: 60%;
+}
+.learn-text{
+    line-height: 26px;
+    margin-bottom: 37px;
+    max-width: 600px;
+}
+.title-learn{
+    margin-top: 10px;
+    max-width: 425px;
+    line-height: 60px;
+    letter-spacing: -1.4px;
+    margin-bottom: 29px;
+}
+.btn-learn{
+    letter-spacing: 2.3px;
+    padding: 22px 64px;
 }
 .title-screen, .title-price{
     font-size: 40px;
@@ -593,6 +677,24 @@ strong{
 }
 .page-fun{
     background-color: #edf6ff;
+}
+.page-video{
+    padding: 71px 0 80px;
+}
+.page-video .wrap{
+    position: relative;
+}
+.page-state{
+    background-image: url(../img/bg9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 124px 0 122px;
+}
+.page-learn{
+    padding: 121px 0 115px;
+    background-image: url(../img/bg6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .page-screen{
     text-align: center;
