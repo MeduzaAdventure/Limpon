@@ -557,6 +557,73 @@ ul{
 .img-screen{
     margin-bottom: -3px;
 }
+
+.title-client{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    margin-bottom: 62px;
+}
+.title-client span{
+    color: #85c8ff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    margin-bottom: 20px;
+}
+.client{
+    display: flex;
+    justify-content: space-between;
+
+}
+.client-item{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px 31px 30px;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 3px #f4f4f4;
+}
+.client-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8px;
+    
+}
+.client-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8085b1;
+    padding-left: 10px;
+    padding-right: 29px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    line-height: 24px;
+    
+}
+.client-info .name{
+    color: #000958;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    margin-bottom: 0px;
+}
+.client-info .position{
+    color: #1085e4;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 3px;
+}
+.client-info>img{
+    margin-top: 10px;
+}
+.client-info>div{
+    padding: 0 0 0 19px;
+}
 .title-price{
     margin-bottom: 74px;
 }
@@ -636,11 +703,70 @@ strong{
 .box-active li{
     color: #fff;
 }
+.title-team{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: -1.3px;
+}
+.title-team span{
+    color: #85c8ff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    padding: 117px 0 21px 0;
+}
+.box-team{
+    display: flex;
+    justify-content: space-between;
+    margin: 137px 0 0 0;
+}
+.box-team-item{
+    background-color: #fff;
+    flex-basis: 31.5%;
+    box-shadow: 0px 7px 3px #f4f4f4;
+    position: relative;
+    padding: 193px 0 0 0;
+}
+.avatar{
+    position: absolute;
+    top: -85px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.box-team-item .position{
+    text-transform: uppercase;
+    color: #1a88e1;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 18px 0 0 0;
+    letter-spacing: 3px;
+}
+.box-team-item .name{
+    font-weight: 600;
+    font-size: 26px;
+    color: #192b59;
+    margin: 12px 0 24px 0;
+    letter-spacing: -0.7px;
+}
+.btn-more{
+    background-image: url(../img/icon-plus.png);
+    width: 50px;
+    height: 50px;
+    margin: 2px auto 41px;
+    border: none;
+    background-color: transparent;
+    padding: 0 0 0 0;
+}
+.btn-more:focus{
+    border: none;
+}
 /* PAGE */
 .page-header{
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 54px 0 334px 0;
     position: relative;
 }
@@ -648,6 +774,7 @@ strong{
     background-image: url(../img/bg1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 107px 0 99px 0;
 }
 .page-software{
@@ -656,8 +783,10 @@ strong{
 }
 .screen-software{
     background-image: url(../img/screen-software.png);
+    background-position: center;
     position: absolute;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 933px;
     height: 992px;
     left:0;
@@ -688,6 +817,7 @@ strong{
     background-image: url(../img/bg9.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 124px 0 122px;
 }
 .page-learn{
@@ -695,11 +825,37 @@ strong{
     background-image: url(../img/bg6.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .page-screen{
     text-align: center;
     background: #edf6ff;
 }
+.page-client{
+    position: relative;
+    padding: 44px 0 0 0;
+    margin: 121px 0 0 0;
+}
+.page-client::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 0;
+    top:0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;    
+}
 .page-price{
     text-align: center;
+    padding: 0px 0 85px 0;
+}
+.page-team{
+    text-align: center;
+    background-image: url(../img/bg8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
