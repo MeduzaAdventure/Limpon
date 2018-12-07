@@ -417,6 +417,26 @@ ul{
     max-width: 549px;
     line-height: 24px;
 }
+.circle-fun{
+    display: block;
+    background-image: url(../img/circle.svg);
+    width: 500px;
+    height: 766px;
+    position: absolute;
+    left: 0;
+    bottom: -302px;
+    background-repeat: no-repeat;
+}
+.rect-fun{
+    display: block;
+    background-image: url(../img/rect.svg);
+    width: 655px;
+    height: 775px;
+    position: absolute;
+    right: 0px;
+    top: -264px;
+    background-repeat: no-repeat;
+}
 .title-fun{
     text-align: center;
     max-width: 430px;
@@ -725,7 +745,9 @@ strong{
     flex-basis: 31.5%;
     box-shadow: 0px 7px 3px #f4f4f4;
     position: relative;
-    padding: 193px 0 0 0;
+    padding: 193px 53px 43px;
+    box-sizing: border-box;
+    margin: 0;
 }
 .avatar{
     position: absolute;
@@ -749,18 +771,100 @@ strong{
     margin: 12px 0 24px 0;
     letter-spacing: -0.7px;
 }
-.btn-more{
-    background-image: url(../img/icon-plus.png);
+.box-team-item .btn-team{
+    display: block;
     width: 50px;
     height: 50px;
-    margin: 2px auto 41px;
+    background-color: #f3f3f3;
+    margin: 2px auto 0;
+    transition: 0.3s;
     border: none;
-    background-color: transparent;
-    padding: 0 0 0 0;
+    border-radius: 100%;
+    display: flex;
+    align-self: center;
+}
+.box-team-item .btn-team:hover{
+    background-color: #1085e4;
+}
+.box-team-item .btn-team span{
+    background-image: url(../img/btnteam.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+}
+.box-team-item .btn-more span{
+    background-position: -7px -3px;
+    width: 20px;
+    height: 20px;
+    
+}
+.box-team-item .btn-fb span{
+    background-position: -39px 12px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-fb:hover span{
+    background-position: -39px -20px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-tw span{
+    background-position: -69px 13px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-tw:hover span{
+    background-position: -69px -19px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-be span{
+    background-position: -98px 12px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-be:hover span{
+    background-position: -98px -20px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-web span{
+    background-position: -129.5px 13px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-web:hover span{
+    background-position: -129.5px -19px;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+.box-team-item .btn-more:hover span{
+    background-position: -7px -35px;
 }
 .btn-more:focus{
-    border: none;
+    outline: none;
 }
+.social-team{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
 /* PAGE */
 .page-header{
     background-image: url(../img/header-bg.png);
@@ -806,6 +910,7 @@ strong{
 }
 .page-fun{
     background-color: #edf6ff;
+    position: relative;
 }
 .page-video{
     padding: 71px 0 80px;
