@@ -519,6 +519,17 @@ ul{
     top: -60px;
     right: -170px;
 }
+.intro p {
+    font-size: 300px;
+    color: rgb(0, 0, 0, 0.04);
+    font-weight: 800;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -132px;
+    text-align: center;
+    margin: 0;
+}
 .flex-state{
     display: flex;
     justify-content: space-between;
