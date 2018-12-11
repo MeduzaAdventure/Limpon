@@ -870,12 +870,156 @@ strong{
     margin: 0 auto;
 }
 
+.title-form {
+    line-height: 60px;
+    letter-spacing: -1.5px;
+    max-width: 500px;
+    margin: 0 0 49px 0;
+    padding: 0;
+}
+.form-content{
+    max-width: 514px;
+    width: 100%;
+    margin-top: 0px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input::-webkit-input-placeholder,  .contact-form textarea::-webkit-input-placeholder {color:#b1c3ee;}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color:#b1c3ee;}
+.contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color:#b1c3ee;}
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {color:#b1c3ee;}
+.contact-form input, .contact-form textarea{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 25px 38px;
+    border: 2px solid #dce4ec;
+    border-radius: 40px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-form textarea{
+    min-height: 162px;
+    resize: none;
+}
+.contact-form-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.contact-form-item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 39px;
+    background-repeat: no-repeat;
+}
+.contact-form-name::after{
+    background-image: url(../img/icon-name.png);
+    width: 12px;
+    height: 15px;
+    top: calc(50% - 6px);
+}
+.contact-form-email::after{
+    background-image: url(../img/icon-email.png);
+    width: 14px;
+    height: 11px;
+    top: calc(50% - 4px);
+}
+.contact-form-text::after{
+    background-image: url(../img/icon-mess.png);
+    width: 14px;
+    height: 14px;
+    top: 30px;
+}
+.btn-form::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 52px;
+    top: 23px;
+    background-image: url(../img/icon-sub.png);
+    height: 12px;
+    width: 13px;
+    background-repeat: no-repeat;
+}
+.btn-form{
+    height: 60px;
+    width: 230px;
+    padding: 0 0 0 22px;
+    letter-spacing: 2.1px;
+    position: relative;
+    margin: 15px 0 0 0;
+}
+.btn-form:focus{
+    outline: none;
+}
+.form-flex>img{
+    margin-right: 60px;
+    margin-left: -20px;
+}
 
 
-
-
-
-
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icons>ul{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-icons>ul>li{
+margin-left: 22px;
+}
+.footer-fb{
+    background-image: url(../img/icons-footer.png);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: 4px 0;
+    display: block;
+}
+.footer-tw{
+    background-image: url(../img/icons-footer.png);
+    height: 16px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-position: -34px 0px;
+    display: block;
+}
+.footer-be{
+    background-image: url(../img/icons-footer.png);
+    height: 16px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-position: -74px 0px;
+    display: block;
+}
+.footer-pr{
+    background-image: url(../img/icons-footer.png);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: -118px 0px;
+    display: block;
+}
+.footer-ff{
+    background-image: url(../img/icons-footer.png);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-position: -156px 0px;
+    display: block;
+}
+.footer-text a{
+    text-transform: uppercase;
+    color: #1085e4;
+}
 /* PAGE */
 .page-header{
     background-image: url(../img/header-bg.png);
@@ -972,6 +1116,20 @@ strong{
 .page-team{
     text-align: center;
     background-image: url(../img/bg8.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0 0 121px 0;
+}
+.page-form{
+    background-image: url(../img/bg9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 110px 0 120px 0;
+}
+.footer{
+    background-color: #192b59;
+    padding: 10px 0;
+    margin: 0;
 }
