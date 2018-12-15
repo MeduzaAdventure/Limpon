@@ -35,10 +35,11 @@
                 <li><a href="" class="nav-item">team</a></li>
                 <li><a href="" class="btn-free">Free trail</a></li>
             </ul>
+            <button class="btn-menu" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 78.439H20.682C9.26 78.439 0 87.699 0 99.121c0 11.422 9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 392.197H20.682C9.26 392.197 0 401.456 0 412.879s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"/></svg></button>
         </div>
         <div class="wrap">
                 <h1>Best Software Landingpage</h1>
-            <div>
+            <div class="btn-header">
                 <a href="" class="btn-primary">get started now</a>
                 <a href="" class="btn-secondary">learn more</a>
             </div>
@@ -47,10 +48,12 @@
     </div>
     <div class="page-co">
         <div class="wrap company">
-            <a href="" class="co-one"></a>
-            <a href="" class="co-two"></a>
-            <a href="" class="co-three"></a>
-            <a href="" class="co-four"></a>
+            <ul>
+                <li class="co-item co-one"><span></span></li>
+                <li class="co-item co-two"><span></span></li>
+                <li class="co-item co-three"><span></span></li>
+                <li class="co-item co-four"><span></span></li>
+            </ul>
         </div>
     </div>
     <div class="page-grid">  
@@ -103,12 +106,12 @@
             <div class="content-sub">
                 <h2 class="title-sub"><span>Subscribe</span>Signup For A Trail</h2>
                 <p>Create your free account now & get 30 days free trail No credit card required</p>
-                <input type="email" placeholder="Enter your email address" class="text-email">
-                <button type="submit" class="btn-primary btn-email">Subscribe</button>
+                <div class="input-sub">
+                    <input type="email" placeholder="Enter your email address" class="text-email">
+                    <button type="submit" class="btn-primary btn-email">Subscribe</button>
+                </div>
             </div>
-            <div class="img-robot">
             <img src="img/robot.png" alt="">
-            </div>
         </div>
     </div>
     <div class="page-software">
@@ -168,7 +171,7 @@
     </div>
     <div class="page-state">
         <div class="wrap flex-state">
-            <div>
+            <div class="state-img">
                 <img src="img/screen2.png" alt="">
             </div>
             <div class="state-content">
@@ -187,18 +190,15 @@
                 <p class="learn-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                 <button type="submit" class="btn-primary btn-learn">Learn more</button>
             </div>
-            <div>
+            <div class="learn-img">
                 <img src="img/screen3.png" alt="">
             </div>
         </div>  
     </div>
     <div class="page-screen">
-        <div>
+
             <h2 class="title-screen"><span>screen preview</span>Screenshot With Details</h2>
-        </div>
-        <div class ="img-screen">
-            <img src="img/screen4.png" alt="">
-        </div>
+            <img src="img/screen4.png" alt="" class ="img-screen">
     </div>
     <div class="page-client">
         <div class="wrap">
@@ -359,6 +359,18 @@
             </div>
         </div>
     </div>
+    <div class="modal">
+        <button class="btn-close" type="button"><span>&times;</span></button>
+        <ul class="nav-modal">
+            <li><a href="" class="nav-item">Home</a></li>
+            <li><a href="" class="nav-item">Features</a></li>
+            <li><a href="" class="nav-item">Video</a></li>
+            <li><a href="" class="nav-item">Screens</a></li>
+            <li><a href="" class="nav-item">Pricing</a></li>
+            <li><a href="" class="nav-item">team</a></li>
+            <li><a href="" class="btn-free">Free trail</a></li>
+        </ul>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
@@ -373,6 +385,12 @@
             $(".btn-thom").click(function(){
                 $(".btn-thom").hide();
                 $(".social-thom").fadeIn();
+            });
+            $(".btn-menu").click(function(){
+                $(".modal").show();
+            });
+            $(".btn-close").click(function(){
+                $(".modal").hide();
             });
         });
     </script>
