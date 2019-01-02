@@ -1388,7 +1388,7 @@ strong{
     }
     .page-software-flex>div {
         -ms-flex-preferred-size: 70%;
-            flex-basis: 70%;
+            flex-basis: 100%;
     }
     .title-sofware{
         text-align: center;
@@ -1577,7 +1577,7 @@ strong{
         width: 350px;
     }
     .page-video-content {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
     .title-video, .now{
@@ -1804,5 +1804,6 @@ strong{
     }
     .client-text{
         line-height: 18px;
+        width: 100%;
     }
 }
